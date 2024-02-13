@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #ff9999; /* красный */
+    margin: 10px;
+  }
+  
+  .main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+    flex: 1;
+    margin: 10px;
+    background-color: #9999ff; /* синий */
+  }
+  
+  .box1 {
+    background-color: #99ff99; /* зеленый */
+  }
+  
+  .box2 {
+    background-color: #ffcc66; /* оранжевый */
+  }
+  
+  .box3 {
+    background-color: #66b2ff; /* голубой */
+  }
+  

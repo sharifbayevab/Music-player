@@ -1,0 +1,154 @@
+
+.Player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #585858;
+
+  }
+
+.player-left {
+    display: flex;
+    align-items: center;
+}
+.player-middle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+    width: 40%;
+    margin-right: 0%;
+}
+
+.player-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-items: center;
+    flex-direction: row;
+    width: 20%;
+}
+
+.player-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background: url('/public/music-temp.jpg') no-repeat; */
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.song-title {
+    font-weight: bold;
+    color: white;
+}
+
+.artist-name {
+    font-size: 0.8em;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.controls .icon {
+    font-size: 20px;
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none; /* If you want to remove borders too */
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.bar {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #555;
+    border-radius: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.played {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 40%; /* Текущий процент воспроизведения */
+    border-radius: 20px;
+    background-color: rgb(213, 208, 211);
+}
+
+.time, .duration {
+    color: white;
+    font-size: 0.8em;
+}
+
+.player-right .icon {
+    font-size: 25px;
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+input[type = "range"] {
+    display: flex;
+    width: 100%;
+}
+
+
+.vertical-slider {
+    display: flex;
+    -webkit-appearance: slider-vertical; 
+       -moz-appearance: slider-vertical; 
+            appearance: slider-vertical; 
+    width: 8px; 
+    height: 100px; 
+    padding: 0 5px; 
+}
+
+.volume-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.volume-bar {
+    position: absolute; 
+    width: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    height: auto;
+}
+
+
